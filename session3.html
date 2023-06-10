@@ -1,0 +1,179 @@
+<DOCTYPE HTML>
+    <html>
+        <!-- le fichier html est divise en 2 partie head et body-->
+        <head>
+            <meta charset=" UTF-8"> <!--commentaire-->
+            <title> E_Store  </title> <!--creer le nom de la page -->
+
+
+
+        </head>
+
+        <body>
+            <p align="center"> <b> Bonjour </b> </p> <!-- pour ecrire au milieu on peut 
+                changer la valeur center par right left ou bien auto-->
+            <h1 style="color :lightcoral">Title </h1> <!--pour creer des title selon leurs title level
+            de 1 a 6-->
+            <font color="pink"> <h2>Tile</h2> </font>
+            <h3 style= color:rgba(rgb(229, 66, 66), green, blue, alpha)>Title </h3> <!--pour changer la couleur 
+                du title-->
+            <h4 style= color:rgb(54, 216, 162) >Title color </h4>
+            <h5 style="background-color:hsl(0, 79%, 78%), color:hsla(9, 9, 9,1)">titre couleur    </h5>
+            <h6>Title </h6>
+            <font color="#ffaaaa" size="3", face="Arial black"> hello </font>
+            <p>Bonjour !</p>
+<!--Pour creer un commentaire cliquer sur cmd puis / -->
+
+            <ol type="I", align = center>
+                
+                <li>hello </li>
+                <li><font color=#ffaaaa face="menlo"> hello </font> </li>
+                <li>hello </li>
+                <li><font color=#ffaaaa face="arial black"> hello </font> </li>
+                <li><font color=#ffaaaa face="zapfino"> hello </font> </li>
+                <li><font color=#ffa0aa face="cochin"> hello </font> </li>
+            </ol>
+
+            <ul type="square">
+                <li><font color="000000"> hello imene </font> </font> </li>
+                <li><font color=#ffaaaa face="menlo"> hello </font> </li>
+                <li>hello </li>
+                <li><font color=#ffaaaa face="arial black"> hello </font> </li>
+                <li><font color=#ffaaaa face="zapfino"> hello </font> </li>
+                <li><font color=#ffa0aa face="cochin"> hello </font> </li>
+            </ul>
+
+<hr>
+
+
+            <!-- pour creer un formulaire   -->
+           <form action = "url" method="post">
+            <!-- fieldset c'est pour encadrer le formulaire -->
+            <fieldset>
+                <!-- pour nomer le formulaire  -->
+                <legend> Informations </legend>
+                <!-- pour creer une case avec posibilite de modification de sa valeur  -->
+               
+                <!-- label c'est pour nomer la case -->
+            <label> first name: </label><br> 
+            <!-- pour saisir la valeur entrees et l'afficher  -->
+            <input type="text"> </input><br>
+            <label>last name :</label><br>
+            <input type="text"> </input><br>
+            <label> sex </label><br>
+            <!-- pour saisir des entrees en forme de choix , radio signifie qu'on peut 
+            cocher un seul choix  -->
+            <input type="radio" values ="male"><label> male </label><br>
+            <input type="radio" value="female"><label>female</label><br>
+            <label>i can program with : </label><br>
+            <!-- pour saisir des entrees en forme de choix , checkbox signifie qu'on peut 
+            cocher plusieurs choix  -->
+            <input type="checkbox" value="js"> <label>java script</label><br>
+            <input type="checkbox" value="html"><label>html</label><br>
+            <!-- pour creer le bouton  de submition  -->
+            <input type="submit" value="submit"> <br>
+           </fieldset>
+           </form>
+
+           <hr>
+           <!-- pour creer une case mot de passe on y incluant une restreinsction de taille -->
+           <form>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name=" pwd" minlength="3" maxlength="10">
+          </form>
+
+          <!-- creer le bouton reset (pour efaccer tout ce qu'on a introduit au formulaire) -->
+          <form action="/action_page.php">
+            <input type="reset">
+          </form>
+<!-- pour pouvoir cocher un seul choix -->
+          <form>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+          </form>
+<!-- pour choisir une couleur  -->
+          <form>
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+          </form>
+<!-- pour creer une case pour choisir la date  -->
+          <form>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+          </form>
+<!-- pour ajouter une restreinction de date -->
+
+          <form>
+            <label for="datemax">Enter a date before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+            <label for="datemin">Enter a date after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02">
+          </form>
+<!-- pour ajouter la case de date avec l'heure  -->
+          <form>
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+          </form>
+<!-- pour une case email  avec autocomplete -->
+          <form>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" autocomplete="on">
+            
+          </form>
+<!-- pour une case d'importation d'image  -->
+          <form>
+            <label for="photo">Enter your image:</label>
+            <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+            </form>
+<!-- pour importer un fichier sans preciser son extention  -->
+            <form>
+                <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile">
+              </form>
+
+<!-- pour une case dont l'entree est un chiffre "une quantite" -->
+            <form>
+                <label for="quantity">Quantity (between 1 and 5):</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="100">
+              </form>
+<!-- pour une case de recherche  -->
+              <form>
+                <label for="gsearch">Search Google:</label>
+                <input type="search" id="gsearch" name="gsearch">
+              </form>
+<!-- pour creer une case dont l'entree est un URL -->
+              <form>
+                <label for="homepage">Add your homepage:</label>
+                <input type="url" id="homepage" name="homepage">
+              </form> 
+<!-- pour creer un bouton -->
+
+              <input type="button" onclick="alert('you shoud sign up first!')" value="Click"><br>
+<!-- bouton evenement "pop up " -->
+<button onclick = "alert ('you should sign up first !  ') ">click here </button><br>
+
+<!-- select option -->
+<label>Veuillez choisir un ou plusieurs animaux :
+    <select name="pets" multiple size="4">
+      <optgroup label="Animaux à 4-jambes">
+        <option value="Chien">Chien</option>
+        <option value="chat">Chat</option>
+        <option value="hamster" disabled>Hamster</option>
+      </optgroup>
+      <optgroup label="Animaux volants">
+        <option value="perroquet">Perroquet</option>
+        <option value="macaw">Macaw</option>
+        <option value="albatros">Albatros</option>
+      </optgroup>
+    </select>
+  </label>
+
+
+
+
+        </body>
+    </html>
